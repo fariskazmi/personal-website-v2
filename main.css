@@ -1,22 +1,93 @@
 .page-section-main{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     
 }
 
 #page-section-main1{
-    background-color: rgb(60, 134, 60);
+    height: 100vh;
+    
+      
+}
 
+#main-background{
+    background-image: url("./circuit.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    animation: main-anim 2s forwards;
+    -webkit-animation: main-anim 2s forwards, main-anim-repeat 30s ease-out 2s infinite;
+    
+}
+
+@keyframes main-anim{
+    0% {
+        filter: blur(500px);
+        -webkit-filter: blur(500px);
+    }
+    100%{
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+}
+
+@keyframes main-anim-repeat{
+    0% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+    10%{
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
+    20% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+    30%{
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    40% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+    50% {
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+    }
+    60% {
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
+    70% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+    80% {
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+    }
+    90% {
+        filter: blur(30px);
+        -webkit-filter: blur(30px);
+    }
+    100% {
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
 }
 
 #page-section-main2{
-    background-color: rgb(36, 80, 36);
+    background-color: rgb(231, 231, 231);
 }
 
 #page-section-main3{
-    background-color: rgb(15, 71, 15);
+    background-color:rgb(189, 189, 189);
 }
 
 #page-section-main4{
-    background-color: rgb(46, 73, 46);
+    background-color:rgb(212, 226, 212);
 }
